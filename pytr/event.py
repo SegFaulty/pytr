@@ -231,7 +231,7 @@ class Event:
             taxes_dicts = filter(lambda x: x["title"] in taxes_keys, data)
             # Iterate over dicts containing tax information and parse each one
             for taxes_dict in taxes_dicts:
-                parsed_taxes_val = cls._parse_float_from_detail(taxes_dict, "de")
+                parsed_taxes_val = cls._parse_float_from_detail(taxes_dict, "en")
                 if parsed_taxes_val is not None:
                     return parsed_taxes_val
 
